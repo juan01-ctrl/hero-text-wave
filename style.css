@@ -27,24 +27,31 @@ video {
     bottom: 0;
     right: 0;
     z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    object-fit: cover;
 }
 
 section {
-    padding: 4rem;
+    padding: 6rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
     z-index: 2;
     background-color: rgb(0, 0, 0);
 }
 
 svg {
+    max-width: 100%;
     overflow: visible;
 }
 
 .hero_section {
+    height: 100vh;
     overflow: hidden;
     background-color: black;
     position: sticky;
@@ -54,15 +61,36 @@ svg {
     right: 0;
 }
 
+
+
 .section-wrapper {
     align-items: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 6rem;
+    gap: 4rem;
+
 }
+
+
 
 .text-standard {
     font-size: 1.5rem;
     letter-spacing: 1px;
     line-height: 1.8;
+}
+
+@media screen and (max-width: 760px) {
+    .section-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    section {
+        padding: 4rem 2rem;
+    }
+
+    .text-standard {
+        font-size: 1rem;
+    }
 }

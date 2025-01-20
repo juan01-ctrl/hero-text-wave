@@ -21,7 +21,7 @@ gsap.fromTo(
     'path',
     { y: 0 },
     {
-        y: -700,
+        y: () => -window.innerHeight * 2.5,
         duration: () => (scrollDirection === 1 ? 1 : 2),
         ease: 'power2.out',
         stagger: .14,
