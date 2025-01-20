@@ -21,7 +21,8 @@ gsap.fromTo(
     'path',
     { y: 0 },
     {
-        y: () => -window.innerHeight * 2.5,
+        y: () => window.innerWidth > 760 ? -700 : -2300,
+        transformOrigin: "center center",
         duration: () => (scrollDirection === 1 ? 1 : 2),
         ease: 'power2.out',
         stagger: .14,
@@ -33,6 +34,7 @@ gsap.fromTo(
             onUpdate: (self) => {
                 scrollDirection = self.direction;
             },
+            markers: true
         },
     }
 );
