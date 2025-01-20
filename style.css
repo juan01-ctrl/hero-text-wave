@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    color: #fff;
+    font-family: "Poppins", serif;
+}
+
+h2 {
+    font-size: 3.5rem;
+    letter-spacing: 4px;
+    margin-bottom: 2rem;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 2px 1px 10px 0px rgba(0, 0, 237, 0.55);
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+section {
+    padding: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+    z-index: 2;
+    background-color: rgb(0, 0, 0);
+}
+
+svg {
+    overflow: visible;
+}
+
+.hero_section {
+    overflow: hidden;
+    background-color: black;
+    position: sticky;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.section-wrapper {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+}
+
+.text-standard {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    line-height: 1.8;
+}
