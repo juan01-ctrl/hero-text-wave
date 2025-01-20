@@ -34,7 +34,6 @@ gsap.fromTo(
             onUpdate: (self) => {
                 scrollDirection = self.direction;
             },
-            markers: true
         },
     }
 );
